@@ -4,7 +4,9 @@ class ChromaInstance:
     def __init__(self):
         # self.chroma_client = chromadb.Client()
         self.chroma_client = chromadb.PersistentClient(path="/data/chromadb/aws_rag/")
-        self.collection = self.chroma_client.get_collection(name="aws_raw")
+
+        self.collection = self.chroma_client.get_or_create_collection(name="aws_raw")
+
         
     def add(self, id_, document):
         self.collection.upsert(
