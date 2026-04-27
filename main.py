@@ -23,7 +23,6 @@ factory = LLMFactory()
 # agent = factory.gemini()
 agent = factory.ollama()
 
-# aws_crawler.populateIndex()
 
 
 def chatLoop():
@@ -54,4 +53,5 @@ def RAGContext(query):
 
 
 if __name__ == '__main__':
-    chatLoop()
+    # chatLoop()
+    aws_crawler.populateIndex()

@@ -13,7 +13,7 @@ class ChromaInstance:
             ids=[id_],
             documents=[document]            
         )
-        print(f"Document Added: {id_}")
+        print(f"Document Added: {id_}, Data Length:{len(document)}")
 
     def query(self, query):
         results = self.collection.query(query_texts=[query], n_results=5)

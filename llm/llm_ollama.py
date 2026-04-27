@@ -5,7 +5,8 @@ class LLMOllama(LLMInterface):
     def __init__(self):
         self.ollamaIP = os.getenv("OLLAMA_IP")
         self.llm_url = f"http://{self.ollamaIP}:11434/api/generate"
-
+        self.model = "gemma4:e2b"
+        
     def query(self, context="", query=""):
         #curl -X POST localhost:11434/api/generate -d '{ "model": "gemma4:e2b","prompt": "hello, how are you" , "stream":false }'
 
@@ -13,9 +14,10 @@ class LLMOllama(LLMInterface):
             'Content-Type': 'application/json'
         }
 
+        self.model = "phi3:mini"
         
         data = {
-            "model": "gemma4:e2b",
+            "model": self.model,
             "prompt":f"context:{context}\n rules: Don't directly mention the context, give short responses\n query:{query}",
             "stream": False
         }
