@@ -5,7 +5,7 @@ class LLMGemini(LLMInterface):
     def __init__(self):
         self.geminiAPIKey = os.getenv("GEMINI_API_KEY")
         self.llm_url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite-preview:generateContent'
-
+        
     def query(self, context="", query=""):
         
         headers = {

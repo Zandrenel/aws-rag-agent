@@ -1,0 +1,16 @@
+---- Benchmarking Test ----
+Thu Apr 30 11:41:19 2026
+Agent:ollama
+Benchmarking File:benchmark_questions.json
+Questions Tested:10
+False
+False
+False
+True
+True
+False
+False
+False
+False
+False
+2/10 (20.0%)

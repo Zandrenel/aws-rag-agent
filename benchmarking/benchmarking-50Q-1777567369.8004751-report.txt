@@ -1,0 +1,56 @@
+---- Benchmarking Test ----
+Thu Apr 30 12:42:49 2026
+Agent:ollama
+Benchmarking File:benchmark_questions.json
+Questions Tested:50
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+True
+True
+False
+False
+True
+False
+False
+False
+False
+False
+False
+False
+False
+True
+False
+True
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+False
+5/50 (10.0%)

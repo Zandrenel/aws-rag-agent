@@ -1,0 +1,17 @@
+---- Benchmarking Test ----
+Date:Thu Apr 30 16:27:13 2026
+Agent:ollama
+Questions:benchmark_questions.json
+Tested:10
+Question 0: False
+Question 1: False
+Question 2: False
+Question 3: False
+Question 4: False
+Question 5: False
+Question 6: False
+Question 7: False
+Question 8: False
+Question 9: False
+Score:0/10
+Percent:0.0%
